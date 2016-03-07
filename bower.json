@@ -1,0 +1,15 @@
+{
+  "name": "duomacia",
+  "description": "A League gaming aid! Forge onward!",
+  "main": "",
+  "authors": [
+    "Tim Gass <timothyagass@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "gaming"
+  ],
+  "moduleType": [],
+  "homepage": "None, yet",
+  "private": true
+}

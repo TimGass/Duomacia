@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
-        <link rel="stylesheet" href="../node_modules/normalize-css/normalize.css" media="screen" title="no title" charset="utf-8">
+        <title>DUOmacia</title>
+        <link rel="stylesheet" href="./css/normalize.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="./css/welcome.css" media="screen" title="no title" charset="utf-8">
     </head>
     <body>
@@ -12,9 +12,13 @@
               <img class="GarenImg" src="./images/GoodEnough.svg" alt="Garen, the might of demacia! Large man, with giant armor and a massive sword! DEMACIA!!!" />
             </div>
             <label for="search">Please input the account you wish to search:</label>
-            <form class="search" action="index.html" method="post">
-              <input type="text" name="search" placeholder="NA only" />
-              <button type="submit" name="submit">Find Duo Queue Suggestions!</button>
+            <form class="search" action="search" method="post">
+              {{-- @if($status)
+                <input class="failed" type="text" name="search" placeholder="Account not found in NA" />
+              @else --}}
+                <input type="text" name="search" placeholder="NA only" />
+              {{-- @endif --}}
+              <button type="submit" name="submit">Forge onwards!</button>
             </form>
         </div>
         <footer>

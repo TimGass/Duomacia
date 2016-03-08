@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', "PagesController@welcome");
+
+Route::get('/{status}', "PagesController@welcomeerr");
+
+Route::post('/search', "Store@search");
 
 /*
 |--------------------------------------------------------------------------

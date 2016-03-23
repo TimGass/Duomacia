@@ -1,13 +1,4 @@
-@import "../../../bower_components/bourbon/app/assets/stylesheets/bourbon";
-@import "../../../bower_components/neat/app/assets/stylesheets/neat";
-
-* {
-  box-sizing: border-box;
-
-  &:focus{
-    outline: none;
-  }
-}
+@import "./genlayout";
 
 .hero{
   @include span-columns(12);
@@ -32,17 +23,54 @@ form.search{
     @include shift(3);
     @include omega(n);
     font-size: 30px;
-    padding: 20px;
+    padding: 5px;
+    text-indent: 15px;
     border: 2px solid #9A9A9A;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-right: none;
     color: #181865;
+
+    &.notfound{
+      &::-webkit-input-placeholder{
+        color: #FF6400;
+      }
+
+      &:-moz-placeholder{
+        color: #FF6400;
+      }
+
+      &::-moz-placeholder{
+        color: #FF6400;
+      }
+
+      &:-ms-input-placeholder{
+        color: #FF6400;
+      }
+    }
+
+    &.failed{
+      &::-webkit-input-placeholder{
+        color: red;
+      }
+
+      &:-moz-placeholder{
+        color: red;
+      }
+
+      &::-moz-placeholder{
+        color: red;
+      }
+
+      &:-ms-input-placeholder{
+        color: red;
+      }
+    }
   }
 
   button{
     @include span-columns(2);
-    height: 76px;
+    height: 75px;
     font-size: 24px;
     color: #FF6400;
     border: 2px solid #9A9A9A;
@@ -57,30 +85,53 @@ form.search{
   }
 }
 
+h1{
+  @include span-columns(10);
+  @include shift(1);
+  color: #FFF;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
 label{
   @include span-columns(10);
   @include shift(1);
   font-size: 30px;
   color: #FFF;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
-body{
-  background-color: #009900;
-  @include outer-container(100%);
+@media (max-width: 480px) {
+  form.search{
+    input{
+      @include shift(0.1);
+      @include span-columns(8);
+      font-size: 20px;
+    }
+
+    button{
+      @include span-columns(4);
+      @include omega(n);
+      font-size: 18px;
+      line-height: 18px;
+      height: 54px;
+    }
+  }
 }
 
-footer{
-  background-color: #006600;
-  height: 50px;
-  @include span-columns(12);
-  color: #FFF;
-  position: absolute;
-  bottom: 0px;
+@media (min-width: 480px) and (max-width: 810px){
+  form.search{
+    input{
+      @include shift(1.7);
+      @include span-columns(7);
+      margin-bottom: 30px;
+    }
 
-  p{
-    font-size: 18px;
-    text-align: center;
+    button{
+      font-size: 21px;
+      line-height: 18px;
+    }
   }
 }

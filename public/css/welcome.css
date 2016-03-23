@@ -4,10 +4,62 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+@font-face {
+  font-family: "Vegur";
+  font-weight: normal;
+  src: url("../fonts/vegur/Vegur-B_0500.otf"); }
+
+@font-face {
+  font-family: "Vegur";
+  font-weight: bold;
+  src: url("../fonts/vegur/Vegur-EL_0500.otf"); }
+
+@font-face {
+  font-family: "Vegur";
+  font-weight: lighter;
+  src: url("../fonts/vegur/Vegur-R_0500.otf"); }
+
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Vegur";
+  line-height: 35px;
+  color: #FFF;
+  text-decoration: none; }
   *:focus {
     outline: none; }
+
+body {
+  background-color: #009900;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0px;
+  padding: 0px; }
+  body::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+footer {
+  background-color: #006600;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  color: #FFF;
+  position: fixed;
+  bottom: 0px;
+  padding-top: 10px; }
+  footer:last-child {
+    margin-right: 0; }
+  footer p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 20px; }
+
+@media (min-width: 480px) and (max-width: 810px) {
+  footer {
+    position: relative; } }
 
 .hero {
   float: left;
@@ -48,7 +100,8 @@ form.search {
     width: 31.76157%;
     margin-left: 25.58941%;
     font-size: 30px;
-    padding: 20px;
+    padding: 5px;
+    text-indent: 15px;
     border: 2px solid #9A9A9A;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -58,12 +111,28 @@ form.search {
       margin-right: 0; }
     form.search input:nth-child(n) {
       margin-right: 0; }
+    form.search input.notfound::-webkit-input-placeholder {
+      color: #FF6400; }
+    form.search input.notfound:-moz-placeholder {
+      color: #FF6400; }
+    form.search input.notfound::-moz-placeholder {
+      color: #FF6400; }
+    form.search input.notfound:-ms-input-placeholder {
+      color: #FF6400; }
+    form.search input.failed::-webkit-input-placeholder {
+      color: red; }
+    form.search input.failed:-moz-placeholder {
+      color: red; }
+    form.search input.failed::-moz-placeholder {
+      color: red; }
+    form.search input.failed:-ms-input-placeholder {
+      color: red; }
   form.search button {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 14.70196%;
-    height: 76px;
+    height: 75px;
     font-size: 24px;
     color: #FF6400;
     border: 2px solid #9A9A9A;
@@ -76,6 +145,19 @@ form.search {
     form.search button:hover {
       background-color: #181865; }
 
+h1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center; }
+  h1:last-child {
+    margin-right: 0; }
+
 label {
   float: left;
   display: block;
@@ -85,32 +167,43 @@ label {
   font-size: 30px;
   color: #FFF;
   text-align: center;
-  margin-top: 50px; }
+  margin-top: 40px; }
   label:last-child {
     margin-right: 0; }
 
-body {
-  background-color: #009900;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
-  body::after {
-    clear: both;
-    content: "";
-    display: table; }
-
-footer {
-  background-color: #006600;
-  height: 50px;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  color: #FFF;
-  position: absolute;
-  bottom: 0px; }
-  footer:last-child {
-    margin-right: 0; }
-  footer p {
+@media (max-width: 480px) {
+  form.search input {
+    margin-left: 0.85298%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    font-size: 20px; }
+    form.search input:last-child {
+      margin-right: 0; }
+  form.search button {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
     font-size: 18px;
-    text-align: center; }
+    line-height: 18px;
+    height: 54px; }
+    form.search button:last-child {
+      margin-right: 0; }
+    form.search button:nth-child(n) {
+      margin-right: 0; } }
+
+@media (min-width: 480px) and (max-width: 810px) {
+  form.search input {
+    margin-left: 14.50067%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+    margin-bottom: 30px; }
+    form.search input:last-child {
+      margin-right: 0; }
+  form.search button {
+    font-size: 21px;
+    line-height: 18px; } }

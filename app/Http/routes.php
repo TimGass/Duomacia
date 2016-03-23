@@ -13,9 +13,15 @@
 
 Route::get('/', "PagesController@welcome");
 
-Route::get('/{status}', "PagesController@welcomeerr");
+Route::get('/error/{status}', "PagesController@welcomeerr");
 
 Route::post('/search', "Store@search");
+
+Route::get("/summoner/{name}", "PagesController@summoner");
+
+Route::post("/summoner/{name}/suggestions", "Store@suggestions");
+
+Route::get("/summoner/{name}/suggestions", "PagesController@suggestions");
 
 /*
 |--------------------------------------------------------------------------
@@ -29,5 +35,4 @@ Route::post('/search', "Store@search");
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
 });

@@ -1,0 +1,33 @@
+@import "./genlayout";
+
+html{
+  &:hover{
+    cursor: progress;
+    cursor: wait;
+  }
+}
+
+h3{
+  font-size: 45px;
+  text-align: center;
+  margin-top: 35vh;
+}
+
+img{
+  @include span-columns(4);
+  @include shift(4);
+}
+
+@media (max-width: 480px) {
+  img{
+    @include span-columns(8);
+    @include shift(2);
+  }
+
+  h3{
+    @include span-columns(10);
+    @include shift(1);
+    line-height: 45px;
+    margin-top: 30vh;
+  }
+}

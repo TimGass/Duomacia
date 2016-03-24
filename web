@@ -1,0 +1,19 @@
+<VirtualHost 107.21.238.17>
+ServerName heroku.com
+DocumentRoot /var/www/html/
+Alias /demo "/var/www/html/demo/public/"
+<Directory /var/www/html/demo>
+    Options -Indexes +FollowSymLinks +MultiViews
+    AllowOverride All
+    Require all granted
+</Directory>
+
+ErrorLog ${APACHE_LOG_DIR}/myproject-error.log
+
+# Possible values include: debug, info, notice, warn, error, crit,
+# alert, emerg.
+LogLevel warn
+
+CustomLog ${APACHE_LOG_DIR}/myproject-access.log combined
+
+</VirtualHost>

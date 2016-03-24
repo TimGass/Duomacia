@@ -31,13 +31,6 @@ return [
 
     'connections' => [
 
-        'gae' => [
-            'driver'	=> 'gae',
-            'queue'		=> 'default',
-            'url'		=> '/tasks',
-            'encrypt'	=> true,
-        ],
-
         'sync' => [
             'driver' => 'sync',
         ],

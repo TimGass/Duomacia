@@ -12,10 +12,10 @@
     8 => 'Illuminate\\Filesystem\\FilesystemServiceProvider',
     9 => 'Illuminate\\Foundation\\Providers\\FoundationServiceProvider',
     10 => 'Illuminate\\Hashing\\HashServiceProvider',
-    11 => 'Shpasser\\GaeSupportL5\\Mail\\MailServiceProvider',
+    11 => 'Illuminate\\Mail\\MailServiceProvider',
     12 => 'Illuminate\\Pagination\\PaginationServiceProvider',
     13 => 'Illuminate\\Pipeline\\PipelineServiceProvider',
-    14 => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
+    14 => 'Illuminate\\Queue\\QueueServiceProvider',
     15 => 'Illuminate\\Redis\\RedisServiceProvider',
     16 => 'Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider',
     17 => 'Illuminate\\Session\\SessionServiceProvider',
@@ -26,7 +26,6 @@
     22 => 'App\\Providers\\AuthServiceProvider',
     23 => 'App\\Providers\\EventServiceProvider',
     24 => 'App\\Providers\\RouteServiceProvider',
-    25 => 'Shpasser\\GaeSupportL5\\GaeSupportServiceProvider',
   ),
   'eager' => 
   array (
@@ -43,7 +42,6 @@
     10 => 'App\\Providers\\AuthServiceProvider',
     11 => 'App\\Providers\\EventServiceProvider',
     12 => 'App\\Providers\\RouteServiceProvider',
-    13 => 'Shpasser\\GaeSupportL5\\GaeSupportServiceProvider',
   ),
   'deferred' => 
   array (
@@ -71,27 +69,6 @@
     'command.tinker' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
     'command.up' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
     'command.view.clear' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.app.name' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.auth.make' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.cache.table' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.console.make' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.controller.make' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.event.generate' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.event.make' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.job.make' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.listener.make' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.middleware.make' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.model.make' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.policy.make' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.provider.make' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.queue.failed-table' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.queue.table' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.request.make' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.seeder.make' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.session.table' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.serve' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.test.make' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.vendor.publish' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
     'Illuminate\\Console\\Scheduling\\ScheduleRunCommand' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
     'migrator' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
     'migration.repository' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
@@ -111,18 +88,18 @@
     'command.queue.forget' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
     'command.queue.flush' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
     'hash' => 'Illuminate\\Hashing\\HashServiceProvider',
-    'mailer' => 'Shpasser\\GaeSupportL5\\Mail\\MailServiceProvider',
-    'swift.mailer' => 'Shpasser\\GaeSupportL5\\Mail\\MailServiceProvider',
-    'swift.transport' => 'Shpasser\\GaeSupportL5\\Mail\\MailServiceProvider',
+    'mailer' => 'Illuminate\\Mail\\MailServiceProvider',
+    'swift.mailer' => 'Illuminate\\Mail\\MailServiceProvider',
+    'swift.transport' => 'Illuminate\\Mail\\MailServiceProvider',
     'Illuminate\\Contracts\\Pipeline\\Hub' => 'Illuminate\\Pipeline\\PipelineServiceProvider',
-    'queue' => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
-    'queue.worker' => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
-    'queue.listener' => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
-    'queue.failer' => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
-    'command.queue.work' => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
-    'command.queue.listen' => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
-    'command.queue.restart' => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
-    'queue.connection' => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
+    'queue' => 'Illuminate\\Queue\\QueueServiceProvider',
+    'queue.worker' => 'Illuminate\\Queue\\QueueServiceProvider',
+    'queue.listener' => 'Illuminate\\Queue\\QueueServiceProvider',
+    'queue.failer' => 'Illuminate\\Queue\\QueueServiceProvider',
+    'command.queue.work' => 'Illuminate\\Queue\\QueueServiceProvider',
+    'command.queue.listen' => 'Illuminate\\Queue\\QueueServiceProvider',
+    'command.queue.restart' => 'Illuminate\\Queue\\QueueServiceProvider',
+    'queue.connection' => 'Illuminate\\Queue\\QueueServiceProvider',
     'redis' => 'Illuminate\\Redis\\RedisServiceProvider',
     'auth.password' => 'Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider',
     'auth.password.broker' => 'Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider',
@@ -148,13 +125,13 @@
     'Illuminate\\Hashing\\HashServiceProvider' => 
     array (
     ),
-    'Shpasser\\GaeSupportL5\\Mail\\MailServiceProvider' => 
+    'Illuminate\\Mail\\MailServiceProvider' => 
     array (
     ),
     'Illuminate\\Pipeline\\PipelineServiceProvider' => 
     array (
     ),
-    'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider' => 
+    'Illuminate\\Queue\\QueueServiceProvider' => 
     array (
     ),
     'Illuminate\\Redis\\RedisServiceProvider' => 

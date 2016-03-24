@@ -12,10 +12,10 @@
     8 => 'Illuminate\\Filesystem\\FilesystemServiceProvider',
     9 => 'Illuminate\\Foundation\\Providers\\FoundationServiceProvider',
     10 => 'Illuminate\\Hashing\\HashServiceProvider',
-    11 => 'Illuminate\\Mail\\MailServiceProvider',
+    11 => 'Shpasser\\GaeSupportL5\\Mail\\MailServiceProvider',
     12 => 'Illuminate\\Pagination\\PaginationServiceProvider',
     13 => 'Illuminate\\Pipeline\\PipelineServiceProvider',
-    14 => 'Illuminate\\Queue\\QueueServiceProvider',
+    14 => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
     15 => 'Illuminate\\Redis\\RedisServiceProvider',
     16 => 'Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider',
     17 => 'Illuminate\\Session\\SessionServiceProvider',
@@ -111,18 +111,18 @@
     'command.queue.forget' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
     'command.queue.flush' => 'Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider',
     'hash' => 'Illuminate\\Hashing\\HashServiceProvider',
-    'mailer' => 'Illuminate\\Mail\\MailServiceProvider',
-    'swift.mailer' => 'Illuminate\\Mail\\MailServiceProvider',
-    'swift.transport' => 'Illuminate\\Mail\\MailServiceProvider',
+    'mailer' => 'Shpasser\\GaeSupportL5\\Mail\\MailServiceProvider',
+    'swift.mailer' => 'Shpasser\\GaeSupportL5\\Mail\\MailServiceProvider',
+    'swift.transport' => 'Shpasser\\GaeSupportL5\\Mail\\MailServiceProvider',
     'Illuminate\\Contracts\\Pipeline\\Hub' => 'Illuminate\\Pipeline\\PipelineServiceProvider',
-    'queue' => 'Illuminate\\Queue\\QueueServiceProvider',
-    'queue.worker' => 'Illuminate\\Queue\\QueueServiceProvider',
-    'queue.listener' => 'Illuminate\\Queue\\QueueServiceProvider',
-    'queue.failer' => 'Illuminate\\Queue\\QueueServiceProvider',
-    'command.queue.work' => 'Illuminate\\Queue\\QueueServiceProvider',
-    'command.queue.listen' => 'Illuminate\\Queue\\QueueServiceProvider',
-    'command.queue.restart' => 'Illuminate\\Queue\\QueueServiceProvider',
-    'queue.connection' => 'Illuminate\\Queue\\QueueServiceProvider',
+    'queue' => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
+    'queue.worker' => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
+    'queue.listener' => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
+    'queue.failer' => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
+    'command.queue.work' => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
+    'command.queue.listen' => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
+    'command.queue.restart' => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
+    'queue.connection' => 'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider',
     'redis' => 'Illuminate\\Redis\\RedisServiceProvider',
     'auth.password' => 'Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider',
     'auth.password.broker' => 'Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider',
@@ -148,13 +148,13 @@
     'Illuminate\\Hashing\\HashServiceProvider' => 
     array (
     ),
-    'Illuminate\\Mail\\MailServiceProvider' => 
+    'Shpasser\\GaeSupportL5\\Mail\\MailServiceProvider' => 
     array (
     ),
     'Illuminate\\Pipeline\\PipelineServiceProvider' => 
     array (
     ),
-    'Illuminate\\Queue\\QueueServiceProvider' => 
+    'Shpasser\\GaeSupportL5\\Queue\\QueueServiceProvider' => 
     array (
     ),
     'Illuminate\\Redis\\RedisServiceProvider' => 

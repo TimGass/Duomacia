@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6543bfdba6b23956d53d2d4ebcfe61e9",
-    "content-hash": "fcb2f82814afa7e4a5f0aea3743c9b36",
+    "hash": "7551b07c69c5cea91083f11ce878b472",
+    "content-hash": "8b1485987e7c5949da82435d403e52e8",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -894,48 +894,6 @@
                 "shell"
             ],
             "time": "2016-03-09 05:03:14"
-        },
-        {
-            "name": "shpasser/gae-support-l5",
-            "version": "1.4.11",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/shpasser/GaeSupportL5.git",
-                "reference": "ea4c425d7e30a942199d1d7d87c0560a38abe720"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/shpasser/GaeSupportL5/zipball/ea4c425d7e30a942199d1d7d87c0560a38abe720",
-                "reference": "ea4c425d7e30a942199d1d7d87c0560a38abe720",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "~5.0",
-                "league/flysystem": "~1.0",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "illuminate/console": "~5.0",
-                "phpunit/phpunit": "~4.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Shpasser\\": "src/Shpasser"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ron Shpasser",
-                    "email": "shpasser@gmail.com"
-                }
-            ],
-            "description": "Google App Engine Support for Laravel 5.1 apps.",
-            "time": "2015-12-20 09:11:14"
         },
         {
             "name": "swiftmailer/swiftmailer",

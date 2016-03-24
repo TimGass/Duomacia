@@ -3,9 +3,6 @@
         Options -MultiViews
     </IfModule>
 
-    Order allow,deny
-    Allow from all
-
     Require all granted
     Options +FollowSymLinks
     RewriteEngine On

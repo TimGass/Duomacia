@@ -50,8 +50,7 @@ return [
 
         'public' => [
             'driver' => 'local',
-            'root' => storage_path('app'),
-            'visibility' => 'public',
+            'root' => storage_path('app/public')
         ],
 
         's3' => [

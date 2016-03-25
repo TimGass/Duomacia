@@ -1,4 +1,4 @@
-web:
+web1:
   name: duomacia
   shared_writable_dirs:
     - app/storage/cache

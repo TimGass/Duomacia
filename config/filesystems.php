@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => 'local',
+    'default' => env('FILESYSTEM', 'local'),
 
     /*
     |--------------------------------------------------------------------------
@@ -43,6 +43,11 @@ return [
 
     'disks' => [
 
+		'gae' => [
+			'driver' => 'gae',
+			'root'   => storage_path().'/app',
+		],
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),
@@ -50,7 +55,8 @@ return [
 
         'public' => [
             'driver' => 'local',
-            'root' => storage_path('app/public')
+            'root' => storage_path('app/public'),
+            'visibility' => 'public',
         ],
 
         's3' => [
